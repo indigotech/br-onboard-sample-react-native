@@ -1,7 +1,7 @@
 import { AppRegistry } from 'react-native';
 import App from './src/App';
-import { configTheme } from './src/config';
+import { config } from './src/config';
 
-configTheme();
+config();
 
 AppRegistry.registerComponent('TaqOnboardReactNative', () => App);
