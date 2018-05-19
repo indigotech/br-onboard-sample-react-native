@@ -10,9 +10,11 @@
   },
   "scripts": {
     "start": "react-native start",
+    "link": "react-native link",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "jest"
+    "test": "jest",
+    "reset-cache": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache"
   },
   "jest": {
     "preset": "react-native"

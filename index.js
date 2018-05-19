@@ -1,7 +1,7 @@
 import { AppRegistry } from 'react-native';
-import App from './src/App';
+import { LoginPage } from './src/modules/authentication/login.page';
 import { config } from './src/config';
 
 config();
 
-AppRegistry.registerComponent('TaqOnboardReactNative', () => App);
+AppRegistry.registerComponent('TaqOnboardReactNative', () => LoginPage);

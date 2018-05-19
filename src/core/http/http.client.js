@@ -6,7 +6,6 @@ export async function request({ interceptors, ...requestOptions }) {
 
     const { url, ...options } = requestOptions
 
-    debugger;
     let response = await fetch(url, options);
 
     response = await runInterceptors(response, 'after', interceptors);
